@@ -3,6 +3,8 @@ import 'package:food_web/Screens/Home/Components/app_bar.dart';
 import 'package:food_web/Screens/Home/Components/body.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -12,7 +14,7 @@ class HomeScreen extends StatelessWidget {
         height: size.height,
         // it will take full width
         width: size.width,
-        decoration: BoxDecoration(
+        decoration:const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/bg.png"),
             fit: BoxFit.cover,
@@ -20,7 +22,7 @@ class HomeScreen extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
+          children: const <Widget>[
             CustomAppBar(),
             Spacer(),
             // It will cover 1/3 of free spaces

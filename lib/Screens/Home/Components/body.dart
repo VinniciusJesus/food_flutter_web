@@ -37,30 +37,30 @@ class Body extends StatelessWidget {
               child: Row(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     height: 38,
                     width: 38,
-                    decoration: BoxDecoration(
+                    decoration:const BoxDecoration(
                       color: kPrimaryColor,
                       shape: BoxShape.circle,
                     ),
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration:const BoxDecoration(
                         color: Color(0xFF372930),
                         shape: BoxShape.circle,
                       ),
                     ),
                   ),
-                  SizedBox(width: 15),
+                const  SizedBox(width: 15),
                   Text(
                     "Get Started".toUpperCase(),
-                    style: TextStyle(
+                    style:const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                       fontSize: 19,
                     ),
                   ),
-                  SizedBox(width: 15),
+               const   SizedBox(width: 15),
                 ],
               ),
             ),

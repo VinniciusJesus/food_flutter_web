@@ -16,7 +16,7 @@ class DefaultButton extends StatelessWidget {
     return ClipRRect(
       borderRadius: BorderRadius.circular(25),
       child: FlatButton(
-        padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+        padding:const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
         color: kPrimaryColor,
         onPressed: press,
         child: Text(
